@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/imágenes/ibmvid.jpg'); 
+    background-image: url('https://github.com/EduardoTr01/ListaDePrecios/blob/main/images/ibmvid.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
