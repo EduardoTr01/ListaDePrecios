@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Show</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="h1">
+        <h1>Cars Show</h1>
+    </div>
+    <div class="h2">
+        <h2>Cotizador</h2>
+    </div>
+    <div class="container">
+        <div class="content">
+            <form id="dynamicForm">
+                <label for="opciones">Elige un modelo:</label>
+                <select id="opciones" name="opciones"></select>
+                <br><br>
+                <label for="precios">Precio: <select id="precios" name="precios"></select></label>
+                <div id="precioArs"></div> <!-- Div para Precio Ars -->
+                <br><br>
+                <div id="detallesForm">
+                    <div class="opc"><label for="patente">Patente:</label><input type="text" id="patente" name="patente" readonly></div>
+                    <div class="opc"><label for="modelo">Modelo: </label><input type="text" id="modelo" name="modelo" readonly></div>
+                    <div class="opc"><label for="version">Versión: </label><input type="text" id="version" name="version" readonly></div>
+                    <div class="opc"><label for="anio">Año: </label><input type="text" id="anio" name="anio" readonly></div>
+                    <div class="opc"><label for="kilometros">Kilómetros: </label><input type="text" id="kilometros" name="kilometros" readonly></div>
+                    <div class="opc"><label for="color">Color: </label><input type="text" id="color" name="color" readonly></div>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div id="cotizacion-dolar-blue" class="coti"></div> <!-- Div para la cotización del dólar blue -->
+</footer>
+</html>

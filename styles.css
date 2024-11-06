@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima/Agdasima-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Agdasima', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://github.com/EduardoTr01/ListaDePrecios/blob/main/images/ibmvid.jpg?raw=true'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    top: 10px; /* Ajusta según tu diseño */
+    left: 10px; /* Ajusta según tu diseño */
+    margin: 0;
+}
+
+h2 {
+    position: absolute;
+    top: 50px; /* Ajusta para que quede justo debajo del h1 */
+    left: 10px; /* Mantén el borde izquierdo */
+    margin: 3px;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el contenido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    display: flex;
+}
+
+#detallesForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las filas */
+}
+
+.opc {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente el label y el input */
+    gap: 10px; /* Espacio entre el label y el input */
+}
+
+label {
+    flex: 1; /* El label ocupará un espacio proporcional */
+}
+
+input, select {
+    flex: 2; /* El input o select ocupará más espacio */
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.coti {
+    background-color:rgba(255, 255, 255, 0.8) ;
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
