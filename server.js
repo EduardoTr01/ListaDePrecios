@@ -1,16 +1,20 @@
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
+const dotenv = require('dotenv');
 const app = express();
 const port = 3001;
+
+// Cargar variables de entorno desde .env
+dotenv.config();
 
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'CarsShow1',
-  database: 'vehiculo'
+  host: process.env.DB_HOST || '127.0.0.1',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD ||'',
+  database: process.env.DB_NAME || 'vehiculo'
 });
 
 connection.connect((err) => {
