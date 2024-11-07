@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         selectPrecios.addEventListener('change', function() {
                             const selectedPrecio = parseFloat(this.value); // Precio en USD
                             const precioArs = (selectedPrecio * tipoCambio).toFixed(2); // Convertir a ARS
+                            const valorConTransferencia = (precioArs * 1.10).toFixed(2);
 
                             const precioArsElement = document.getElementById('precioArs');
                             const valorVentaElement = document.getElementById('valorVenta');
@@ -82,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             }
 
                             if (valorVentaElement) {
-                                valorVentaElement.innerHTML = `Valor de Venta: $${precioArs}`;
+                                valorVentaElement.innerHTML = `Valor más transferencia: $${valorConTransferencia}`;
                             } else {
                                 console.error('Error: Elemento "valorVenta" no encontrado');
                             }
