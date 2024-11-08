@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient( 
+        10deg,
+        #fff,
+        #adaaab 10%,
+        #848081 25%,
+        #c3c3c3 45%,
+        #a09d9e 65%,
+        #777475 80%,
+        #fff 100%
+    );
+}
+
+@font-face {
+    font-family: 'Agdasima';
+    src: url('fonts/Agdasima/Agdasima-Regular.ttf') format('truetype');
+}
+
+h1, h2 {
+    font-family: 'Agdasima';
+}
+h1 {
+    font-size: 180px;
+    text-align: center;
+}
+h2 {
+    font-size: 70px;
+    text-align: end;
+}
