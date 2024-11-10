@@ -8,7 +8,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('C:/Users/eduar/OneDrive/Escritorio/ListaDePrecios/images/Captura de pantalla 2024-11-08 102523.png'); 
+    background-image: url('https://raw.githubusercontent.com/EduardoTr01/ListaDePrecios/main/images/Captura%20de%20pantalla%202024-11-08%20102523.png'); 
     background-size: cover;
     background-position: center;
     z-index: 1;
